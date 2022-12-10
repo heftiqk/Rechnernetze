@@ -1,0 +1,356 @@
+Q: Lokales Netz bzw. LAN. 
+A:
+
+Q: MAC-Layer
+A: 
+
+Q: ARP
+A: 
+
+Q: ARP-Cache
+A: 
+
+Q: 10BaseT
+A: 
+
+Q: Skizze 10BaseT Hub-System mit zwei PCs | Vor/Nachteile im Vergleich zu 10Base2
+A: 
+
+Q: CSMA/CD | CSMA/CA
+A: 
+
+Q: Twisted-Pair vs Koaxial + Skizze + Vorteile
+A: 
+
+Q: Full-Duplex + Voraussetzung + Vorteile
+A: 
+
+Q: Switch + Vorteile gegenüber Hub
+A: 
+
+Q: Forwarding Database Funktionsweise + Skizze
+A: 
+
+Q: Warum verbessert Layer-2 Switching Technologie die IT-Sicherheit?
+A: 
+
+Q: TCP Wesentliche Eigenschaften und Verwendungszweck
+A: 
+
+Q: UDP Wesentliche Eigenschaften und Verwendungszweck
+A: 
+
+Q: Flags TCP Header
+A: 
+
+Q: TCP Funktionsweise
+A: 
+
+Q: UDP Funktionsweise
+A: 
+
+Q: Socket + Socket-Adresse + Socket-Schnittstelle
+A: 
+
+Q: Ports und warum diese erforderlich sind
+A: 
+
+Q: Welche Bereiche von Portnummern gibt es + Bedeutung und wer vergibt diese?
+A: Well-known etc...
+
+Q: IP-Multicasting vs Broadcast (warum vorzuziehen)
+A: 
+
+Q: IP-Adressklassen + Beispiele
+A: 
+
+Q: Welche Transportprotokolle können IP-Multicasting nutzen + warum?
+A: 
+
+Q: Wie kann die Reichweite einer Multicastübertragung gesteuert werden
+A: 
+
+Q: Struktureller Aufbau eines IPv4-Paketes welches TELNET-Anwendungsdaten transportiert
+A: 
+
+Q: Mit welchem Dienstprogramm kann man prüfen ob auf dem eigenen System ein TELNET-Server auf Daten wartet?
+A: 
+
+Q: DNS Erläutern + Aufgabe
+A: 
+
+Q: Domäne
+A: 
+
+Q: Resource Records Erklärung + Wie gespeichert
+A: 
+
+Q: Resource Records Welche gibt es?
+A: 
+
+Q: FQDN
+A: 
+
+Q: DNS Funktionsweise + Skizze
+A: 
+
+Q: www.saturn.de führt zum gleichen Zeil wie saturn.de. Wie geht das einfach?
+A: 
+
+Q: DNS Ptr-Query
+A: 
+
+Q: hosts-Datei Funktion + Gefahr
+A: 
+
+Q: ping dienstprogramm Funktionsweise
+A: 
+
+Q: Könnte man mit dem ping-Programm prüfen, ob auf einem entfernten System ein http-Serverdienst erreichbar ist?
+A: 
+
+Q: Ping-Datenpakete über TCP oder UDP
+A: Fangfrage?
+
+Q: SSH
+A: 
+
+Q: SSH vs TELNET
+A: 
+
+Q: SSH zusätzliche Features
+A: 
+
+Q: SSH Funktionsweise + Skizze
+A: 
+
+Q: Welche zwei Verschlüsselungstechniken kommen zum Einsatz + warum? + jeweils ein beispielhaftes kryptografisches Verfahren
+A: 
+
+Q: Fingerprint
+A: 
+
+Q: Digitale Signatur
+A: 
+
+Q: OSI-Schichten Deutsch
+A: 
+
+Q: OSI-Layers English
+A: 
+
+Q: Welche Schichten umfasst die LAN-Technik
+A: 
+
+Q: Arbeitet der MAC-Layer einheitlich
+A: 
+
+Q: logische und physikalische Netzarchitekturen
+A: 
+
+Q: Vor & Nachteile Netzarchitekturen
+A: 
+
+Q: Wann treten Kollisionen auf und wie werden diese durch CSMA/CD verhindert
+A: 
+
+Q: Skizzensymbole für Koppelelemente
+A: 
+
+Q: Aufbau von IPv4-, IPv6- und MAC-Adressen
+A: 
+
+Q: Wie stellt ein Switch sicher, dass nur korrekte MAC-Frames übertragen werden?
+A: 
+
+Q: Cut-Through / Store and Forward + Vor / Nachteile
+A: 
+
+Q: Aufgaben der einzelnen OSI Schichten und Äquivalenzen zum Internet-Architekturmodell
+A: 
+
+Q: Wozu dient eine IP-Adresse?
+A: Dient der logischen Adressierung von Interfaces und Netzen
+
+Q: SMTP Aufgabe + Eigenschaften
+A: 
+
+Q: Funktionsweise SMTP + Skizze
+A: 
+
+Q: Struktur einer E-Mail
+A: 
+
+Q: Wie können beliebige Arten von Informationen per SMTP übertragen werden?
+A: 
+
+Q: Woher stammen die Einträge in der FDB und wer löscht diese wieder?
+A: 
+
+Q: Skizze Aufbau eines IPv4 Paketes welches SMTP-Daten transportiert
+A: 
+
+Q: TTL Feld
+A: Time to live Feld. Wird von jeder Zwischenstation auf der route um 1 reduziert. Paket wird verworfen wenn es 0 erreicht
+
+Q: wozu dient das Dienstprogramm netstat
+A: 
+
+Q: Mit welchem Befehl kann man prüfen welche Prozesse auf UDP-Pakete warten?
+A: 
+
+Q: Mit welchem Dienstprogramm kann man prüfen, ob auf einem entfernten Sytem ein SMTP-Serverdienst läuft?
+A: 
+
+Q: Wozu dient beim SMTP das Base64-Verfahren?
+A: 
+
+Q: Greylisting Aufgabe + Funktionsweise + Nachteile
+A: 
+
+Q: Dienstprogramm für DNS-Abfragen
+A: 
+
+Q: TELNET Aufgabe + Eigenschaften
+A: 
+
+Q: TELNET Funktionsweise + Skizze
+A: 
+
+Q: Network Virtual Terminal
+A: 
+
+Q: Aufbau MAC-Frame
+A: 
+
+Q: Parity-Verfahren
+A: 
+
+Q: ***Das gegenstük zum Parityverfahren 
+A: 
+
+Q: wieso können in LANs auf dem gleichen Kabel unterschiedliche Netzwerkprotokolle (IPv4, IPv6,...) ihre Pakete austauschen?
+A: 
+
+Q: Basisband / Breitband
+A: 
+
+Q: Welchen theoretischen Gesamtdurchsatz (Mbit/s) kann ein 8-Port Ethernet-Hub (Repeater) bzw. ein neuerer 8 Port Ethernet-Switch zu einem Zeitpunkt jeweils maximal liefern, wenn jeweils das 10Base-T genutzt wird (mit Begründung)?
+A: 
+
+Q: POP3 
+A: 
+
+Q: IMAP4
+A: 
+
+Q: POP3 vs IMAP4
+A: 
+
+Q: LLC-Layer
+A: 
+
+Q: Unicast vs Broadcast vs Multicast (siehe WS15 A. 2b)
+A: 
+
+Q: SMTP: unbefugten Versand beschränken Mehrere Möglichkeiten
+A: 
+
+Q: Push-Mail-Dienst + Mit welchem Protokoll kann diese Architektur herstellerneutral realisiert werden?
+A: 
+
+Q: Wann wird in einem Switch auch ein korrektes MAC-Frame nicht weitergeleitet?
+A: 
+
+Q: TP-Kabel Differenzverfahren
+A: 
+
+Q: Drei Vorteile Full-Duplex-Betrieb
+A: 
+
+Q: private IPv4 Adressen + wozu gibt es sie? + wie erkennt man sie? + Einschränkungen in ihrer Nutzung
+A: 
+
+Q: Three-way Handshake + Anwendung + Funktionsweise mit Skizze + Wie viele Datenpakete dafür notwendig?
+A: 
+
+Q: DNS Zone + Erkläarung + Wann ist diese die gleiche wie die Domäne?
+A: 
+
+Q: Subnet-Directed-Broadcast
+A: 
+
+Q: SMTP Statuscodes
+A: 
+
+Q: Kollisionsdomäne
+A: 
+
+Q: NAT vs PAT + Erklärung
+A: 
+
+Q: STARTTLS
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
