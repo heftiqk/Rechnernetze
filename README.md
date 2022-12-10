@@ -13,4 +13,4 @@ Es wär nice das so bei zu behalten, so lässt es sich leichter mit grep oder se
 
 Kommentare wie gewohnt mit // beginnen.
 
-Bitte auch sinnvolle Commitmessages und Dateinamen benutzen. <sub><sup>(Looking at you Jonny ;)</sup></sub>
+Bitte auch sinnvolle Commitmessages und Dateinamen benutzen. <sub><sup>Looking at you Jonny ;)</sup></sub>
