@@ -1,12 +1,8 @@
 # Karteikarten Rechnernetze
 
-## Studenten aller Welt vereinigt euch!
-
-----
-
-Die Struktur ist simpel:
-Q: Frage
-A: Antwort
+Die Struktur ist simpel: <br>
+Q: Frage <br>
+A: Antwort 
 
 Immer durch eine Leerzeile getrennt.
 Es wär nice das so bei zu behalten, so lässt es sich leichter mit grep oder sed arbeiten falls nötig.
