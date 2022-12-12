@@ -1,8 +1,8 @@
 Q: Lokales Netz bzw. LAN. 
-A:
+A: Realisiert einen direkten, physikalischen Datentransport zwischen Netzinterfaces und stellt Zugriffsverfahren bereit.
 
 Q: MAC-Layer
-A: 
+A: Sublayer der Data-Link-Layer. Stellt Medienzugriffsverfahren bereit um Kommunikation in verschiedenen Netztopologien zu ermöglichen. | Fügt physikalische MAC-Adresse zur eindeutigen Adressierung von Interfaces hinzu.
 
 Q: ARP
 A: 
@@ -140,7 +140,7 @@ Q: OSI-Layers English
 A: 
 
 Q: Welche Schichten umfasst die LAN-Technik
-A: 
+A: Physical- und Data-Link-Layer
 
 Q: Arbeitet der MAC-Layer einheitlich
 A: 
@@ -157,8 +157,8 @@ A:
 Q: Skizzensymbole für Koppelelemente
 A: 
 
-Q: Aufbau von IPv4-, IPv6- und MAC-Adressen
-A: 
+Q: Aufbau von IPv4- und MAC-Adressen
+A: IPv4: 32 Bit z.B. 192.168.178.1 | MAC: 6 Byte z.B. ac:8e:48:f0:41:45
 
 Q: Wie stellt ein Switch sicher, dass nur korrekte MAC-Frames übertragen werden?
 A: 
@@ -229,8 +229,9 @@ A:
 Q: ***Das gegenstük zum Parityverfahren 
 A: 
 
+//Reicht das aus als Erklärung? Gefunden auf Folie 9 Kapitel 4.1
 Q: wieso können in LANs auf dem gleichen Kabel unterschiedliche Netzwerkprotokolle (IPv4, IPv6,...) ihre Pakete austauschen?
-A: 
+A: Protokolladresse der LLC-Layer ermöglicht das.
 
 Q: Basisband / Breitband
 A: 
@@ -248,7 +249,7 @@ Q: POP3 vs IMAP4
 A: 
 
 Q: LLC-Layer
-A: 
+A: Sublayer der Data-Link-Layer. Realisiert eindeutige Schnittstelle (Service Access Point) zur Unabhängigkeit der Netzwerkprotokolle von MAC-Zugriffsverfahren | Fügt Protokolladresse hinzu.
 
 Q: Unicast vs Broadcast vs Multicast (siehe WS15 A. 2b)
 A: 
