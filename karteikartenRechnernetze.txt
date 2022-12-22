@@ -7,11 +7,12 @@ A: Sublayer der Data-Link-Layer. Stellt Medienzugriffsverfahren bereit um Kommun
 Q: Medienzugriffsverfahren
 A: Regeln Zugriff auf Medien (z.B. Kabel) in verschiedenen Netztopologien. z.B. Tokenpassing in Ring/Stern/Bustopologien oder CSMA/CD.
 
-Q: ARP
-A: Adress Resolution Protocol - Kommunikationsprotokoll zum Herausfinden der MAC-Adresse bei gegebener IP-Adresse
+Q: ARP + Funktionsweise
+A: Adress Resolution Protocol - Kommunikationsprotokoll zum Herausfinden der MAC-Adresse bei gegebener IP-Adresse: ARP-Request per MAC Broadcast, ARP-Reply per MAC-Unicast an Router (+Speichern des IP/MAC Paares im ARP-Cache)
 
+//Kai, was´ besser?
 Q: ARP-Cache
-A: Liste von ARP Einträgen, um bei bekannten IP-Adressen, direkt MAC-Adressen zu bekommen
+A: Liste von ARP Einträgen, um bei bekannten IP-Adressen, direkt MAC-Adressen zu bekommen (Liste von bekannten Paaren aus IP/MAC) 
 
 Q: 10BaseT
 A: 10 Mbits/s Basisband Twisted-Pair-Kabel
@@ -29,7 +30,7 @@ Q: Full-Duplex + Voraussetzung + Vorteile
 A: Durch separate Kanäle senden/empfangen in beide Richtungen zeitgleich. Keine Kollisionserkennung erforderlich daher schneller. Voraussetzung: TP-Kabel
 
 Q: Switch + Vorteile gegenüber Hub
-A: Switch besitzt eine Forwarding Database, womit er gezielt Datenpakete an Netzwerkteilnehmer schicken kann (Unicast), anstatt nur alsBroadcast, wie beim Hub
+A: Verbindet mehrere Netzwerkteilnehmer miteinander und kann gezielt Datenpakete an einzelne Netzwerkteilnehmer schicken (Unicast), anstatt nur als Broadcast, wie beim Hub
 
 Q: Forwarding Database Funktionsweise + Skizze
 A: 
@@ -38,7 +39,7 @@ Q: Warum verbessert Layer-2 Switching Technologie die IT-Sicherheit?
 A: 
 
 Q: TCP Wesentliche Eigenschaften und Verwendungszweck
-A: Transmission Control Protocol - Eine Verbindung wird hergestellt per 3-way-handshake und aufrecht erhalten, um konstanten Datenaustausch zu ermöglichen
+A: Transmission Control Protocol - Eine Verbindung wird hergestellt per 3-way-handshake und aufrecht erhalten, um gesicherten Datenaustausch zu ermöglichen Eigenschaften: Übertragungssicherheit durch positivem Quittungsbeleg, Verbindung muss auf- und abgebaut werden
 
 Q: UDP Wesentliche Eigenschaften und Verwendungszweck
 A: User Datagram Protocol - Keine Verbindung wird hergstellt, sondern nur einmal geschickt, ohne Überprüfung, ob/ was ankommt
@@ -56,13 +57,10 @@ Q: Socket + Socket-Adresse + Socket-Schnittstelle
 A: 
 
 Q: Ports und warum diese erforderlich sind
-A: Ports ermöglichen die Kommunikation von bestimmten Anwendungen, im Gegensatz nur von bestimmten Systemen. Die Adresse setzt sich dabei aus der IP-Adresse des Gerätes + ":'Port-Nummer'" zusammen. 
+A: Ports ermöglichen die Kommunikation von bestimmten Anwendungen, im Gegensatz nur von bestimmten Geräten. Die Adresse setzt sich dabei aus der IP-Adresse des Gerätes + ":'Port-Nummer'" zusammen. 
 
-Q: Arts von Ports und deren Bereiche
-A: Well-known ports: 0 - 1023 (für System Prozesse); Registered ports: 1024 - 49151 (reservierbar von Firmen, etc); Dynamic/ private ports: 49152 - 65535 (für private/ anpassbare ports)
-
-Q: Welche Bereiche von Portnummern gibt es + Bedeutung und wer vergibt diese?
-A: Well-known etc...
+Q: Arten von Ports und deren Bereiche + wer vergibt diese
+A: Well-known ports: 0 - 1023 (für System Prozesse [vorgegeben von IANA]); Registered ports: 1024 - 49151 (reservierbar von Firmen, etc); Dynamic/ private ports: 49152 - 65535 (für private/ anpassbare ports)
 
 Q: IP-Multicasting vs Broadcast (warum vorzuziehen)
 A: Beim Multicasting werden eine vorbestimmte Gruppe von IP-Adressen angesendet, wobei beim Broadcast JEDER im System. Dies macht Multicasting wesentlich sicherer gegenüber "Eindringlingen"
@@ -70,8 +68,9 @@ A: Beim Multicasting werden eine vorbestimmte Gruppe von IP-Adressen angesendet,
 Q: IP-Adressklassen + Beispiele
 A: 
 
+//HELP
 Q: Welche Transportprotokolle können IP-Multicasting nutzen + warum?
-A: Nur UDP, da keine bestehende Verbindung mit eine Vielzahl von Geräten gehalten werden kann (TCP)
+A: Nur UDP, IGMP, da keine bestehende Verbindung mit eine Vielzahl von Geräten gehalten werden kann (TCP) und bei ICMP ... ????????????????
 
 Q: Wie kann die Reichweite einer Multicastübertragung gesteuert werden
 A: 
@@ -107,7 +106,7 @@ Q: DNS Ptr-Query
 A: 
 
 Q: hosts-Datei Funktion + Gefahr
-A: "lokaler DNS" - lokale Datei, die als einfacher DNS dient, um zB typischer Weise lokalhost aufzulösen. Wenn diese von Außen verändert werden kann, könnten sichere Abfragen auf unsichere Websiten, etc. weitergeleitet werden
+A: "lokaler DNS" - lokale Datei, die als einfacher DNS dient, um typischer Weise lokalhost aufzulösen. Wenn diese von Außen verändert werden kann, könnten sichere Abfragen auf unsichere Websiten, etc. weitergeleitet werden
 
 Q: ping dienstprogramm Funktionsweise
 A: 
@@ -235,15 +234,12 @@ A:
 Q: Parity-Verfahren
 A: 
 
-Q: ***Das Gegenstück zum Parityverfahren 
-A: 
-
 //Reicht das aus als Erklärung? Gefunden auf Folie 9 Kapitel 4.1
 Q: wieso können in LANs auf dem gleichen Kabel unterschiedliche Netzwerkprotokolle (IPv4, IPv6,...) ihre Pakete austauschen?
 A: Protokolladresse der LLC-Layer ermöglicht das.
 
 Q: Basisband / Breitband
-A: Beim Breitband wird auf einem Medium auf mehreren Bandbreiten gesendet, um die Auslastung zu erhöhen, Basisband immer nur eins
+A: Basisband - gesamter Frequenzbereich genutzt, erlaubt höhere Datenraten (evt auch Full-Duplex), Breitband mehrere gleichzeitig (nebeneinander) FM/AM (-> Frequency- / Amplitude Modulation)
 
 Q: Welchen theoretischen Gesamtdurchsatz (Mbit/s) kann ein 8-Port Ethernet-Hub (Repeater) bzw. ein neuerer 8 Port Ethernet-Switch zu einem Zeitpunkt jeweils maximal liefern, wenn jeweils das 10Base-T genutzt wird (mit Begründung)?
 A: 
@@ -273,7 +269,7 @@ Q: Wann wird in einem Switch auch ein korrektes MAC-Frame nicht weitergeleitet?
 A: 
 
 Q: TP-Kabel Differenzverfahren
-A: Beim TP-Kabel gehören immer ein Adern PAAR zu einer Übertragung. Auf dem Einen wird das Signal invertiert geschickt, damit man bei Störungen 1) Die Störung erkennen kann und 2) Sie sogar beheben kann, da man 2 "gleiche" Signale hat, die aber an unterschiedlichen Punkten gestört wurden
+A: Beim TP-Kabel gehören immer ein Adern PAAR zu einer Übertragung. Auf dem Einen wird das Signal invertiert geschickt und beim Empfänger zurück invertiert, um durch Störungen entstandene Wellen auszulöschen
 
 Q: Drei Vorteile Full-Duplex-Betrieb
 A: 
