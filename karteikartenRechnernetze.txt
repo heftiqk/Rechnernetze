@@ -134,10 +134,10 @@ Q: Digitale Signatur
 A: 
 
 Q: OSI-Schichten Deutsch
-A: 
+A: Anwendung, Darstellung, Kommunikation, Transport, Vermittlung, Sicherung, Bitübertragung | Eselsbrücke: Alle dicken Kommunisten trinken viel Schnaps Bitch
 
 Q: OSI-Layers English
-A: 
+A: Application, Presentation, Session, Transport, Network, Data-Link, Physical | Eselsbrücke: All pirate ships take no darn prisoners
 
 Q: Welche Schichten umfasst die LAN-Technik
 A: Physical- und Data-Link-Layer
@@ -152,10 +152,10 @@ Q: Vor & Nachteile Netzarchitekturen
 A: 
 
 Q: Wann treten Kollisionen auf und wie werden diese durch CSMA/CD verhindert
-A: 
+A: Wenn zwei Geräte zeitgleich senden. CSMA/CD erkennt Kollision. Alle sendenden Geräte warten für zufällige Back-off-time bevor sie erneut senden. (stochastisches Zugriffsverfahren)
 
 Q: Skizzensymbole für Koppelelemente
-A: 
+A: https://github.com/heftiqk/Rechnernetze/blob/main/img/koppelelemente.png
 
 Q: Aufbau von IPv4- und MAC-Adressen
 A: IPv4: 32 Bit z.B. 192.168.178.1 | MAC: 6 Byte z.B. ac:8e:48:f0:41:45
@@ -167,7 +167,10 @@ Q: Cut-Through / Store and Forward + Vor / Nachteile
 A: S&F: Switch speichert gesamtes Paket bevor es weitergeleitet wird. Pro: Prüfung auf Korrektheit -> sicher, unterschiedliche Geschwindigkeiten an eingang und ausgang möglich. Contra: langsam | CT: Weiterleiten sobald MAC Adresse ermittelt. Pro: schneller Contra: keine prüfung und gleiche Geschwindigkeit erforderlich.
 
 Q: Aufgaben der einzelnen OSI Schichten und Äquivalenzen zum Internet-Architekturmodell
-A: 
+A: https://github.com/heftiqk/Rechnernetze/blob/main/img/osiSchichtenModell.png
+
+Q: Internet-Architekturmodell
+A: https://github.com/heftiqk/Rechnernetze/blob/main/img/internetArchitekturModell.png
 
 Q: Wozu dient eine IP-Adresse?
 A: Dient der logischen Adressierung von Interfaces und Netzen
