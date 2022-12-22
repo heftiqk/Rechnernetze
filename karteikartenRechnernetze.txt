@@ -4,6 +4,9 @@ A: Realisiert einen direkten, physikalischen Datentransport zwischen Netzinterfa
 Q: MAC-Layer
 A: Sublayer der Data-Link-Layer. Stellt Medienzugriffsverfahren bereit um Kommunikation in verschiedenen Netztopologien zu ermöglichen. | Fügt physikalische MAC-Adresse zur eindeutigen Adressierung von Interfaces hinzu.
 
+Q: Medienzugriffsverfahren
+A: Regeln Zugriff auf Medien (z.B. Kabel) in verschiedenen Netztopologien. z.B. Tokenpassing in Ring/Stern/Bustopologien oder CSMA/CD.
+
 Q: ARP
 A: 
 
@@ -11,19 +14,19 @@ Q: ARP-Cache
 A: 
 
 Q: 10BaseT
-A: 
+A: 10 Mbits/s Basisband Twisted-Pair-Kabel
 
-Q: Skizze 10BaseT Hub-System mit zwei PCs | Vor/Nachteile im Vergleich zu 10Base2
+Q: Vor/Nachteile 10BaseT Hub-System mit zwei PCs im Vergleich zu 10Base2
 A: 
 
 Q: CSMA/CD | CSMA/CA
-A: 
+A: Carrier Sense Multiple Access / Collosion Detection/Avoidance. Zugriffsverfahren bei dem Kollisionen erkannt (CD) und/oder vermieden (CA) werden. CA nur in W-LANs
 
 Q: Twisted-Pair vs Koaxial + Skizze + Vorteile
-A: 
+A: TP-Kabel hat mehrere Adern. Jeweils zwei Adern zu Paaren verdrillt wobei auf einer das Signal invertiert wird um Störungen zu filtern. (Vorteil). Meist vier Paare ermöglichen Kommunikation in beide Richtungen simultan. (Full-Duplex) https://github.com/heftiqk/Rechnernetze/blob/main/img/twistedPair.jpg
 
 Q: Full-Duplex + Voraussetzung + Vorteile
-A: 
+A: Durch separate Kanäle senden/empfangen in beide Richtungen zeitgleich. Keine Kollisionserkennung erforderlich daher schneller. Voraussetzung: TP-Kabel
 
 Q: Switch + Vorteile gegenüber Hub
 A: 
@@ -161,7 +164,7 @@ Q: Aufbau von IPv4- und MAC-Adressen
 A: IPv4: 32 Bit z.B. 192.168.178.1 | MAC: 6 Byte z.B. ac:8e:48:f0:41:45
 
 Q: Wie stellt ein Switch sicher, dass nur korrekte MAC-Frames übertragen werden?
-A: 
+A: Anhand der Frame-Check-Sequence im MAC-Header. (z.B. als Prüfsumme)
 
 Q: Cut-Through / Store and Forward + Vor / Nachteile
 A: S&F: Switch speichert gesamtes Paket bevor es weitergeleitet wird. Pro: Prüfung auf Korrektheit -> sicher, unterschiedliche Geschwindigkeiten an eingang und ausgang möglich. Contra: langsam | CT: Weiterleiten sobald MAC Adresse ermittelt. Pro: schneller Contra: keine prüfung und gleiche Geschwindigkeit erforderlich.
@@ -294,67 +297,4 @@ Q: NAT vs PAT + Erklärung
 A: 
 
 Q: STARTTLS
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
-A: 
-
-Q: 
 A: 
