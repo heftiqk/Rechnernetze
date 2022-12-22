@@ -164,7 +164,7 @@ Q: Wie stellt ein Switch sicher, dass nur korrekte MAC-Frames übertragen werden
 A: 
 
 Q: Cut-Through / Store and Forward + Vor / Nachteile
-A: 
+A: S&F: Switch speichert gesamtes Paket bevor es weitergeleitet wird. Pro: Prüfung auf Korrektheit -> sicher, unterschiedliche Geschwindigkeiten an eingang und ausgang möglich. Contra: langsam | CT: Weiterleiten sobald MAC Adresse ermittelt. Pro: schneller Contra: keine prüfung und gleiche Geschwindigkeit erforderlich.
 
 Q: Aufgaben der einzelnen OSI Schichten und Äquivalenzen zum Internet-Architekturmodell
 A: 
